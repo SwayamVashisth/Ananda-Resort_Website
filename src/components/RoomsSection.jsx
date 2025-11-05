@@ -25,7 +25,7 @@ const RoomsSection = () => {
 
   return (
     <section className="carousel-section" id="RoomsSection">
-      <h2 className="carousel-title">Our Rooms</h2>
+      <h2 className="carousel-title">Our Services</h2>
 
       <div className="carousel-container">
         <button className="carousel-btn left" onClick={() => scroll("left")}>
