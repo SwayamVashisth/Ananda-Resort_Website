@@ -16,7 +16,7 @@ const About = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <img src="C:\Users\hp\Desktop\resort\ananda\public\images\room.png"
+          <img src="\images\room.png"
             
           />
         </motion.div>
