@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link} from "react-router-dom";
 import { Mail, Phone, MapPin, ChevronRight } from "lucide-react";
 
 export default function Footer() {
@@ -26,17 +27,22 @@ export default function Footer() {
         <div className="footer-section">
           <h2>Our Rooms</h2>
           <ul>
-            {[
-                "Suite Room",
-              "Superior Room",
-              "Executive Room",
-              "Standard Economy",
+            <li>
+              <ChevronRight className="footer-icon" /><Link to="./Suite">Suite Room</Link>
+            </li><li>
+            <ChevronRight className="footer-icon" /><Link to="./Superior">Superior Room</Link>
+            </li>
+            <li>
+              <ChevronRight className="footer-icon" /><Link to="./Standard ">Standard Economy</Link>
+            </li>
+            <li>
+              <ChevronRight className="footer-icon" /><Link to="./Executive">Executive Room</Link>
+            </li>
+             
               
-            ].map((room) => (
-              <li key={room}>
-                <ChevronRight className="footer-icon" /> {room}
-              </li>
-            ))}
+              
+           
+     
           </ul>
         </div>
 
@@ -44,16 +50,20 @@ export default function Footer() {
         <div className="footer-section">
           <h2>Quick Links</h2>
           <ul>
-            {[
-              "About Us",
-              "Wedding Destination",
-              "Party Destination",
-              "Contact Us",
-            ].map((link) => (
-              <li key={link}>
-                <ChevronRight className="footer-icon" /> {link}
-              </li>
-            ))}
+            <li>
+          
+              <ChevronRight className="footer-icon" /><Link to ="./pages/About">About Us</Link>
+            </li>
+         <li>
+          <ChevronRight className="footer-icon" /><Link to="./Wedding">Wedding Destination</Link>
+         </li>
+         <li>
+          <ChevronRight className="footer-icon" /><Link to="./Party">Party Destination</Link>
+         </li>
+         <li>
+          <ChevronRight className="footer-icon" /><Link to="./Contact">Contact Us</Link>
+         </li>
+              
           </ul>
         </div>
       </div>

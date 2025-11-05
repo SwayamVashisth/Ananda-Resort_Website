@@ -18,10 +18,12 @@ footer {
 
 .footer-section p,
 .footer-section li {
-  color: #c0c0c0;
+  color: #f9f7f7;
   font-size: 0.95rem;
   line-height: 1.6;
 }
+
+
 
 .footer-section li {
   list-style: none;
@@ -31,14 +33,24 @@ footer {
   margin-bottom: 0.4rem;
   cursor: pointer;
   transition: color 0.2s ease-in-out;
+  color: white;
 }
 
+  .footer-section a{
+    color: white;
+    text-decoration: none;
+  }
+
+  
+  .
+  
+
 .footer-section li:hover {
-  color: #fff;
+  color: #fbf7f7;
 }
 
 .footer-icon {
-  color: white;
+  color: rgb(111, 106, 106);
   width: 18px;
   height: 18px;
 }
