@@ -1,0 +1,110 @@
+/* Header.css */
+
+.header {
+  position: fixed;        /* stays at top while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;            /* full screen width */
+  background-color: #0e3262; /* your blue color */
+  color: rgb(8, 8, 8);
+  z-index: 1000;          /* stays above all elements */
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 40px;
+  background-color: rgb(121, 94, 94); /* or transparent if you want it merged */
+}
+
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+.header-main img {
+  height: 60px; /* logo size */
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  
+}
+
+/* Add space at top of page content to prevent overlap with fixed header */
+body {
+  margin: 0;
+  padding-top: 140px; /* adjust depending on header height */
+}
+/* Dropdown inside nav-links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #f7f4f4;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ebebef;
+}
+
+/* Dropdown Styling */
+.dropdown {
+  position: relative;
+}
+
+.small-arrow {
+  font-size: 0.6em;
+  margin-left: 4px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+  display: none;
+  flex-direction: column;
+  min-width: 160px;
+  z-index: 10;
+}
+
+.dropdown-menu a {
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.dropdown-menu a:hover {
+  
+  color: rgb(0, 0, 0);
+}
+
+/* Show dropdown */
+.dropdown:hover .dropdown-menu,
+.dropdown-menu.show {
+  display: flex;
+}
