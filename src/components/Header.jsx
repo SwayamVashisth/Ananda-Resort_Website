@@ -55,7 +55,7 @@ const Header = () => {
           </div>
 
            <Link to ="./pages/Blogs">Blogs</Link>
-          <a href="/">Contact Us</a>
+           <Link to ="./pages/Contact">Contact Us</Link>
         </nav>
 
         <div className="phone">

@@ -11,6 +11,7 @@ import GymAndYoga from "./pages/GymAndYoga";
 import banner from "./assets/banner.png";
 import AboutResort from "./components/AboutResort";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 import Blogs from"./pages/Blogs";
 import RoomsSection from "./components/RoomsSection";
 import Gallery from "./components/Gallery";
@@ -48,6 +49,9 @@ const App = () => {
         <Route path="/pages/About" element={<About />} />
 
         <Route path="/pages/Blogs" element={<Blogs />} />
+
+        
+        <Route path="/pages/Contact" element={<Contact Us/>} />
 
         {/* Banquet Hall Page */}
         <Route path="/BanquetHall" element={<BanquetHall />} />
